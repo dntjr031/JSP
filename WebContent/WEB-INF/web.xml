@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>mystudy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+  	<servlet-name>delSercv</servlet-name>
+  	<servlet-class>com.mystudy.pd.serv.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>delSercv</servlet-name>
+  	<url-pattern>/delServ</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>detailServ</servlet-name>
+  	<servlet-class>com.mystudy.pd.serv.DetailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>detailServ</servlet-name>
+  	<url-pattern>/detailServ</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editserv</servlet-name>
+  	<servlet-class>com.mystudy.pd.serv.EditServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editserv</servlet-name>
+  	<url-pattern>/editserv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editokserv</servlet-name>
+  	<servlet-class>com.mystudy.pd.serv.EditOkServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editokserv</servlet-name>
+  	<url-pattern>/editokserv</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
+
+

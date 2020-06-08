@@ -8,6 +8,7 @@
 </head>
 <body>
 <%
+	//test02.jsp에서 post방식으로 서브밋됨
 	//요청 파라미터에 대한 한글 인코딩 처리
 	request.setCharacterEncoding("utf-8");
 
